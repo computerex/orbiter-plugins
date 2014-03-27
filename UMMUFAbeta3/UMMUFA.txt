@@ -1,0 +1,62 @@
+Hi. This is the release of UMMUFA (UMMU for all). This release comes with some new features. The most
+important of them being is that now the system takes care of saving the state of the ships registered to it. 
+
+UMMUFA is an "extension" to Dan Steph's Universal MMU system. You HAVE to install UMMU prior to installing this
+add-on. You can get it here: orbiter.dansteph.com
+
+This "extension" allows you to add UMMU capability in every vessel. 
+
+To install, simply extract this package in orbiter's main directory keeping the directory structure in tact. 
+You can configure the system by modifying the Modules\UMMUFA.cfg file. The parameters you can modify are 
+explained there. 
+
+USAGE:
+
+UMMUFA uses configuration files for setting vessel parameters. Here's an example of how to make ShuttleA UMMU compatible
+by using UMMUFA:
+
+These instructions assume that you have already installed Orbitersound 3.5, UMMUFA, and UMMU.
+
+1. Start the standard "checklist\Quickstart.scn" scenario.
+2. Switch focus to SH-03
+3. Press TAB + D. A dialog will pop up. Enter the ship data. 
+   
+PosP = vector that defines the positive values of the imaginary box that defines the airlock shape
+PosN = vector that defines the negative values of the imaginary box that defines the airlock shape
+Pos   =  Where the EVA will appear relative to the vessel
+rot   = orientation of the EVA relative to the vessel
+
+4. Once done entering the data, press press "Create CFG", and close the dialog box
+
+Now a cfg file is automatically generated inside Orbiter\Config\UMMUFA folder. Every vessel of that type will now be UMMUFA compatible.
+You can add crew members by pressing TAB + LEFT ARROW KEY. You can also save a scenario using that dialog box. When you save a scenario,
+a newly generated scenario file will be created in orbiter\scenarios\ folder. A CFG file will be created in Orbiter\scenarios\ummufa folder. The newly
+generated scenario file will point to the newly generated cfg file. If you decide to move the newly generated cfg file to another location, make sure
+you update the path of that file inside the scenario. The path is specified by the "CFG" field inside the begin_UMMUFA and end_UMMUFA section. 
+
+NOTE: You only need to make the cfg file one time. Just remember this. If you press TAB + LEFT ARROW KEY, and a dialog box doesn't pop up,
+you need to create a cfg file. Otherwise, you don't. Again, to create a cfg file, press TAB + D.
+
+KEYS:
+
+TAB + UP ARROW KEY - EVA
+TAB + = - Select next member
+TAB + - - select next airlock
+TAB + RIGHT ARROW KEY - switch focus to the last evaed member
+TAB + D - open CFG file generator dialog
+TAB + LEFT ARROW KEY - Open "Add Crew Member" dialog box
+TAB + E - eject
+
+I have taken the liberty to make the stock Deltaglider UMMU compatible using this system. Any time you want to add crew members, simply 
+press TAB + LEFT ARROW KEY. You can save scenarios using that dialog box as well.
+
+UMMUFA creates a cfg file titled "CurrentState.cfg" within the orbiter\scenarios\UMMUFA folder. That file is made whenever orbiter
+saves state. NOTE: If you quick save using CTRL + S, THE UMMUFA STATES WILL NOT BE SAVED! If you want to save a scenario 
+using UMMUFA, save is using the Add Crew member dialog by pressing TAB + LEFT ARROW KEY.
+
+You need VC++ 2005 runtome components in order for this add-on to work properly. Get it here:
+http://www.microsoft.com/downloads/details.aspx?familyid=32bc1bee-a3f9-4c13-9c99-220b62a191ee&displaylang=en
+
+regards
+computerex
+

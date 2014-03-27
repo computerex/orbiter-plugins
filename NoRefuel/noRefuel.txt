@@ -1,0 +1,6 @@
+Hi. This plug-in let's you toggle orbiter's automatic refueling when you land on a landing pad. Press CTRL + F to toggle. 
+To install, extract this pack in Orbiter's top directory keeping the directory structure in tact. You will need the VC++ 2005 runtime components
+in order for this add-on to work properly. Get them here: http://www.microsoft.com/downloads/details.aspx?familyid=32bc1bee-a3f9-4c13-9c99-220b62a191ee&displaylang=en
+
+regards
+computerex

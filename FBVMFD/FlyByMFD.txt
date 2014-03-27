@@ -1,0 +1,45 @@
+Hi. This is FlyByViewMFD. It's a simple attempt to implement a fly by view in Orbiter.The system inline
+with Orbiter is essentially useless for vessels traveling at high speeds. 
+
+What this MFD does is create a dummy camera vessel to provide the fly by view.
+The user provides the relative velocity vector, and the position relative to the vessel(s)
+you are trying to get the fly by view of. With these 2 simple options, you can get some 
+cool fly by views. 
+
+UPDATE:
+FlyByView MFD now has vessel tracking capability.
+MFD buttons have been added
+Smooth FOV change
+
+USAGE:
+
+SHIFT + [ = Change vessel target
+SHIFT + ] = Toggle tracking
+SHIFT + P = Specify the position vector
+SHIFT + V = Specify the velocity vector
+SHIFT + F = Activate fly by
+SHIFT + R = Revert to old camera view
+
+While in Fly by:
+
+use NUMPAD and NUMPAD2 for smooth FOV change
+
+Example:
+
+Say I want a fly by shot of a Deltaglider in Orbiter, coming from behind the camera to the front.
+Say I want the "camera" to be 2 meters above the Deltaglider, 200 meters in front of it, and a relative velocity of -30 m/s to 
+make the glider come from behind me. 
+
+For the pos vector, I would enter: 0 2 200
+For the vel vector, I would enter: 0 0 -30
+
+Say I also want the camera to move right at 2 m/s, the vel vector would change to: 2 0 -30
+
+Special thanks to Artlav for helping me implement the vessel tracking
+
+To use this addon, you must have the VC++ 2005 express edition runtime components, which you can get here:
+
+http://www.microsoft.com/downloads/details.aspx?FamilyID=32BC1BEE-A3F9-4C13-9C99-220B62A191EE&displaylang=en
+
+cheers
+computerex

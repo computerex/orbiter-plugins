@@ -1,0 +1,52 @@
+Hi. AutoHover MFD is a simple MFD that will give every vessel some handy autopilots.
+
+Currently supported autopilots:
+
+Pitch hold
+Bank  Hold (RCS only)
+velocity hold
+vertical velocity hold
+AOA holder
+
+USAGE:
+
+Activate the MFD, set the autopilot configurations to your liking, and then you can close the MFD or switch it with any other. 
+Each vessel gets it's own autopilots, so you can have multiple autopilots running in different vessels simultaneously. 
+The pitch and bank autopilots have only been tested with the stock dg, but they 
+should work with any other vessel. You may see some jittering. Switch camera mode to "Global Frame".
+
+KEY MAP:
+
+SHIFT + = sign ("<>" button) : Cycles the selected autopilot 
+SHIFT + S      ("TGT" button): set the target value (ie. the value you want the autopilot to reach for the specified autopilot)
+SHIFT + T      ("TGL" button): Toggle autopilot
+SHIFT + C      ("TAL" button): Set weather the vessel is a tail sitter. If the vessel is a tail sitter, the autopilot will use the main engines for
+                               vertical velocity hold
+SHIFT + [      ("INC" button): Increase the target by step
+SHIFT + ]      ("DEC" button): Decrease the target by step
+SHIFT + I      ("++"  button): Increase step by 1
+SHIFT + D      ("--"  button): Decrease step by 1
+SHIFT + H      ("HLT" button): Immediatly stops all autopilots and activates killrot 
+
+NOTE::->
+
+The pitch autopilot might not work for some vessels
+If the ship is a tail sitter, do not use the cruise autopilot while the vertical velocity hold autopilot is active,
+as they will fight to gain control of the main engine. 
+
+The AOA holder only fires the pitch thrusters for holding the aoa, so you will have to maintain the bank
+and yaw by yourself, you can have the bank autopilot  maintain the bank. The pitch autopilot and the aoa
+autopilot should not be on at the same time. 
+
+INSTALL:
+
+Simply extract this archive in Orbiter's main directory keeping the directory structure in
+tact. 
+
+Please do not activate the autopilot when time warp is above 1x. 
+
+You will need the VC++ 2005 runtime components in order for this MFD to work. 
+Please get them here: http://www.microsoft.com/downloads/details.aspx?familyid=32BC1BEE-A3F9-4C13-9C99-220B62A191EE&displaylang=en
+It's a 2.5 MB download. 
+
+Cheers

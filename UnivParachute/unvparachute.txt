@@ -1,0 +1,8 @@
+Hello. This is a universal parachute add-on. It allows you to add an unlimited number of parachutes to any vessel.
+You can deploy/jettison parachutes using the included Universal Parachute MFD. To attach parachutes to vessels, 
+simply create a cfg file with the title corresponding with the vessel's class name, or vessel's ini name for spacecraftx.dll vessels
+inside the root/config/unvparachute directory. Look at root/config/unvparachute/Deltaglider.cfg as an example. This add-on
+comes with two meshes, ParachuteFront and ParachuteBack. ParachuteFront acts like a parachute, while the latter like a drag chute.
+
+regards
+computerex

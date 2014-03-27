@@ -1,0 +1,30 @@
+Hi. This add-on allows you to define additional internal camera views. To install, extract this pack in Orbiter's directory
+keeping the structure in tact. Then activate the module under orbiter's launchpad. 
+
+USAGE:
+
+To add views to a vessel, create a cfg file with the view parameters inside Orbiter\config\MutltiView directory.
+The name of the cfg file must correspond with class name of the vessel the file is for. If the vessel is a spacecraftX.dll vessel,
+the name of the cfg file must be the same as the ini of that vessel. 
+
+CFG format:
+
+ViewCount=3   ; number of additonal views
+CAM_1_Pos=10 0 0 ; position relative to the vessel where the camera is located [x, y, z]
+CAM_1_dir=0 1 0
+
+CAM_2_Pos=-10 0 0
+CAM_2_dir=0 0 1
+
+CAM_3_Pos=-0.7 1.15 5.55
+CAM_3_dir=0 0 1
+
+To switch between different views, while inside simulation, press CTRL + F4, then double click on "Camera Views".
+
+In order for this add-on to function, you need to have the VC++ 2005 runtime components installed. Get them here:
+http://www.microsoft.com/downloads/details.aspx?familyid=32bc1bee-a3f9-4c13-9c99-220b62a191ee&displaylang=en
+
+You may re-distribute this add-on with custom add-on packages.
+
+regards 
+computerex

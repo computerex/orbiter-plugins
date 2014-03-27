@@ -1,0 +1,6 @@
+Hello guys. This simple little utility allows you to enable or disable the focus of any given vessel. Just put the classname, or
+ini name of a spacecraftx.dll vessel in orbiter\config\vessels\FocusVessel.cfg file, which can be opened with notepad. 
+By default, the ISS focus has been turned off, and Atlantis SRB/Luna Wheel on. You can change that easily enough...
+
+regards 
+computerex

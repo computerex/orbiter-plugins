@@ -1,0 +1,27 @@
+Hi. This MFD implements star wars physics and some other features to every vessel.
+To install, extract in Orbiter's main directory keeping the structure in tact. Then activate
+the module under orbiter's launchpad.
+
+USAGE::
+
+SHIFT + P - Increase velocity by the vel. gain factor [m/s]
+SHIFT + S - Set the vel.gain factor
+SHIFT + T - Toggle star wars physics (go where you point)
+SHIFT + C - Toggle constant propogation
+SHIFT + F -  Fire blaster
+SHIFT + V - Set the blaster relative velocity
+SHIFT + R - Set blaster's explosion range in meters
+Accelerate towards a planet, then either do spins to slow down, or enter a negative value for the vel.gain factor. 
+
+The blasters "explode" when a vessel is within the specified range. When you hit a vessel, it bounces.
+The bigger the range, the bigger the blasters. 
+
+NOTE: The blasters defy gravity. The physics behind the objects getting hit is unrealistic. 
+
+In order for this add-on to function, you need the VC++ 2005 runtime components. Get them here:
+http://www.microsoft.com/downloads/details.aspx?familyid=32bc1bee-a3f9-4c13-9c99-220b62a191ee&displaylang=en
+
+Thanks to Jacob Larsen for the math behind the modified physics. 
+
+regards
+computerex

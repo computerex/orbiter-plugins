@@ -1,0 +1,29 @@
+﻿Hi. This is the release of UMMUFA (UMMU for all). This release features simplicity. 
+
+DESCRIPTION:
+-----------------------------------------------------------------------------------
+UMMUFA is an extension to Dan Steph's Universal MMU system. You HAVE to install UMMU prior to installing this add-on. You can get it here: orbiter.dansteph.com. This extension allows you to add UMMU capability in every vessel. 
+
+To install, simply extract this package in orbiter's main directory keeping the directory structure in tact. You can configure the system by modifying the Modules\UMMUFA.cfg file. The parameters you can modify are explained there. 
+
+USAGE:
+-------------------------------------------------------------------------------------
+After activating UMMUFA in the "Modules" tab of Orbiter's launchpad, any vessel with at least one docking port will be UMMU compatible. To add crew, simply press TAB + LEFT ARROW KEY
+
+KEYS:
+TAB + UP ARROW KEY - EVA
+TAB + = - Select next member
+TAB + - - select next docking port (EVAs are done through docking ports)
+TAB + RIGHT ARROW KEY - switch focus to the last evaed member
+TAB + LEFT ARROW KEY - Open "Add Crew Member" dialog box
+TAB + E - eject
+
+UMMUFA creates a cfg file titled "CurrentState.cfg" within the orbiter\scenarios\UMMUFA folder. That file is made whenever orbiter
+saves state. 
+
+NOTE: If you quick save using CTRL + S, THE UMMU STATES WILL NOT BE SAVED! If you want to save a scenario using UMMUFA, save it using the Add Crew member dialog by pressing TAB + LEFT ARROW KEY. UMMUFA will automatically make any vessel with at least one docking port UMMU compatible, which means even the vessels who have UMMU coded in natively. This will naturally lead to synchronization errors. Add the class name of any vessel who is UMMU compatible by default within the orbiter\Modules\UMMUFAIGNORE.cfg file. Open the file using notepad. 
+ 
+regards
+computerex
+
+

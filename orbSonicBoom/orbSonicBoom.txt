@@ -1,0 +1,38 @@
+Hi. This module implements the visual and auditory effects of breaking the sound barrier within Orbiter. 
+Each vessel can have it's own condensation cloud. The effects will only be rendered for vessels
+with an ini containing the parameters for the condenstaion cloud. You must place your ini's in :
+config\orbSonicBoom folder, and the name of the ini must correspond with the class name of the vessel
+the ini is for. For spacecraft*.dll type vessels, the name of the ini must correspond with the name
+of the vessel itself. 
+
+To install, extract this package in orbiter's main directory keeping the directory structure in tact. 
+Then activate the module under orbiter's launch pad. You must have orbiter sound 3.5 installed for this add-on
+to functin properly. Here's a tutorial for configuring the particle streams in the ini by Art Eaton
+
+srcsize - particle size at creation [m] .................how big the particles start when created
+srcrate - average particle creation rate [Hz]...............how many particles are made per second
+v0 - emission velocity [m/s]................................how fast the particles move in meters per second
+srcspread - velocity spread during creation....................What the variation of the particle speed is a defined by "v0"
+lifetime - average particle lifetime.................................Approximately how long the particles exist for
+growthrate - particle growth rate [m/s]............................How fast the particles grow
+atmslowdown - slowdown rate in atmosphere.....................how fast the particles slow down from the speed defined by "v0"
+LTYPE - EMISSIVE, DIFFUSE render lighting method....................Emissive means the smoke is bright and hot looking. Diffuse is like black dark smoke.
+LEVELMAP - LVL_FLAT, LVL_LIN, LVL_SQRT, LVL_PLIN, LVL_PSQRT mapping from level to alpha ...............As your thruster setting increases, the smoke gets thicker. The function by which this does that is either flat (unchanging) linear(increases directly with the thruster setting) or by it's square root (increases to many mtimes the volume as the setting gets higher). The last to possible values: LVL_PLIN & LVL_PSQRT are linear and square root increases within a set defined range
+lmin - min for the PLIN and PQSRT mapping types................
+lmax - max for the PLIN and PSQRT mapping types................ These are the minimum and maximum values for the LVL_PLIN, LVL_PSQRT options above. It is not always used
+
+ATMSMAP - ATM_FLAT, ATM_PLIN, ATM_PLOG mapping from atmospheric params to alpha... like the LEVELMAP above, but for the thickness of the atmosphere (altitude) instead of the thruster level
+amin, amax - min and max densities for atms PLIN mapping minimum and maximum values for the density of the atmosphere required to start making smoke. If you set the amin to zero, you will produce smoke on the moon or in space.
+tex - name of exhaust texture. SET NONE if not using any texture (recommended)
+pos - vector specifing the position of the condensation cloud relative to the vessel
+duration - time in seconds of how long the condensation cloud will last
+sound - location of the sound file that is played when you break the sound barrier
+
+NOTE: You need the VC++ 2005 runtime components for this add-on to function. Get them here:
+http://www.microsoft.com/downloads/details.aspx?familyid=32bc1bee-a3f9-4c13-9c99-220b62a191ee&displaylang=en
+
+The condensation clouds for the Deltaglider and Atlantis are only there as exmaples. 
+They are not accurate, and they were not meant to be. 
+DG's condensation cloud example by tl8.
+regards,  
+computerex

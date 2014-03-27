@@ -1,0 +1,28 @@
+Hi. This is an orbital scenery generation module. 
+It creates/deletes vessels. To install, extract this archive
+in orbiter's top directory, keeping the structure in tact. 
+Make sure you activate the roid module under orbiter's launchpad. 
+
+Customize this module with Modules\Plugin\roid.ini file
+
+[SETTINGS]
+; How many vessels will be rendered at one time?
+count=100
+; random meshes. To make the scenery objects look different from each other
+mesh_count=1
+mesh_1_name=phobos
+; If the scenery object's rel pos is bigger (or the other way around)
+; then any of these 3 values, it is deleted
+destroy_ofs=(1000,500,1000)
+; maximum limits relative to the vessel in local coordinates. 
+; The real values will be randomized
+create_ofs=(1000,500,1000)
+; so the vessels created won't be in a straight line
+; scenery objects velocity relative to the focus vessel
+relvel=(0,0,-120)
+; "Create scenery objects if focus altitude is above 300 km"
+renderalt=300
+
+Limitations:
+
+vessels are always created from the focus's z+ direction. 

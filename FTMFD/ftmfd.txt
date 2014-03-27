@@ -1,0 +1,11 @@
+Hi. This MFD allows you to move fuel from vessel to vessel, refuel your tanks, and dump fuel.
+Multiple fuel transfers can be done simultaneously. To install, extract this archive in orbiter's root
+directory keeping the directory structure in tact. Then activate the module under orbiter's launchpad
+to use the MFD. Once you have opened the MFD, press the MNU button and HLP button to get 
+help. 
+
+Recommended add-ons: orbiter sound 3.5 by Dan Steph at http://www.orbiter.dansteph.com
+
+
+regards
+computerex

@@ -1,0 +1,8 @@
+Hello. This is AutoAttach, it's a plugin that makes attachment points emulate docking behavior. Unlike docking,
+attachment points can only be attached using API calls. With this plugin active however, if you bring a attachment point
+within 1 meter of another point, and assuming one point is parent and the other is child, they will automatically get attached. 
+If you want to free a child, switch focus to it, and open up "AutoAttach Manager MFD", and hit Shift+A. The plug-in only scans
+for vessels that need attachments when scanning is enabled. This is for compatibility, and to reduce the impact on FPS. 
+Just open the AutoAttach Manager MFD, and toggle scanning using Shift + S.
+regards
+computerex

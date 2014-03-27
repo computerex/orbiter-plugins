@@ -1,0 +1,21 @@
+Hi. This simple module allows you to add "lights" and beacons to vessels. Simply create a 
+ini file with the parameters (below), name it with the title of the class name of that 
+particular vessel, and drop it in the config\spotlights folder. The "lights" automatically
+turn themselves off when time acceleration is taking place, or if it's night or day. They turn themselves back on wthen it's done. 
+
+Look at the Config\spotlights\Dragonfly.ini and ShuttleA.ini files
+for examples. 
+
+To install, simply extract this pack in orbiter's top directory keeping the directory 
+structure in tact. Then activate the orbSpotlight module under the launchpad's modules tab. 
+
+To find the class name of a vessel, open it's configuration file (usually in config\vessels), 
+and it should be there. 
+
+NOTE: For spacecraft*.dll type vessels, the name of the ini must be the name of the spacecraft*.dll in
+      the scenario you are launching. 
+
+Special thanks to "BEEP" from the M6 forums for providing the ini files for ShuttleA and Dragonfly. 
+
+cheers
+computerex

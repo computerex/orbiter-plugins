@@ -1,0 +1,8 @@
+Hello. This plugin allows you to add particle streams to simple cfg defined vessels. 
+Look at the root/config/particles/Deltaglider.cfg for an example of how to create your own. 
+Look at the Orbiter API reference in order to find what each parameter stands for. 
+The name of the cfg file must be the same as the classname of of the vessel in question. 
+If the vessel does not have a classname, the name of the cfg file should be the same as the name of the vessel. 
+
+regards
+computerex

@@ -1,0 +1,32 @@
+Hi. This module adds a dust kick off effect for vessels with hover engines. To install, extract this archive
+in orbiter's top directory keeping the directory structure in tact.If your altitude is below that of the offset defined 
+in the Modules\Plugin\orbHoverDust.ini, it will simulate dust kick off. The particle stream for the dust effect c
+an be configured using the same ini.
+
+Particle parameters:
+
+srcsize     - particle size at creation [m]
+srcrate     - average particle creation rate [Hz]
+v0          - emission velocity [m/s]
+srcspread   - velocity spread during creation
+lifetime    - average particle lifetime
+growthrate  - particle growth rate [m/s]
+atmslowdown - slowdown rate in atmosphere
+LTYPE       - EMISSIVE, DIFFUSE render lighting method
+LEVELMAP    - LVL_FLAT, LVL_LIN, LVL_SQRT, LVL_PLIN, LVL_PSQRT mapping from level to alpha
+lmin        - min for the PLIN and PQSRT mapping types
+lmax        - max for the PLIN and PSQRT mapping types
+ATMSMAP     - ATM_FLAT, ATM_PLIN, ATM_PLOG  mapping from atmospheric params to alpha
+amin, amax  - min and max densities for atms PLIN mapping
+tex         - name of exhaust texture. SET NONE if not using any texture (recommended)
+alt_ofs     - "if altitude is below this value, render the effect" defined in meters
+For more information, look in the Orbiter API documentation.
+
+bug fixes:
+
+* fixed the CTD when a new stage is created in a vessel
+* Dynamically created vessels are now registered
+
+
+regards
+computerex
